@@ -1,1 +1,13 @@
+<h1>$${\color{red}Welcome} \space {\color{Goldenrod}To } \space {\color{blue}SHELL}\space {\color{Goldenrod};) }$$</h1>
 
+Before we can get into the intricacies of sending and receiving shells, it's important to understand what a shell actually is. 
+In the simplest possible terms, shells are what we use when interfacing with a ***Command Line environment*** (CLI). In other words, ***the common bash or sh programs in Linux are examples of shells, as are cmd.exe and Powershell on Windows***. When targeting remote systems it is sometimes possible to force an application running on the server (such as a webserver, for example) to execute arbitrary code. When this happens, we want to use this initial access to obtain a shell running on the target.
+
+<br>
+
+> In simple terms, we can force the remote server to either send us command line access to the server ***(a reverse shell)***, or to open up a port on the server which we can connect to in order to execute further commands ***(a bind shell)***.
+
+<br>
+<p align="center">
+<img src="https://github.com/4bo4yman/Privilege-Escalation/assets/156849852/bed5065b-1644-43c2-9370-0d455fb44ad9" height="300px" width="800px">
+</p>
