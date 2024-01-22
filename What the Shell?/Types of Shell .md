@@ -65,8 +65,17 @@ On the attacking machine:
 
 *******
 
+<br>
 
+> The final concept which is relevant in this task is that of interactivity. Shells can be either ***interactive*** or ***non-interactive***.
 
+> [!IMPORTANT]
+> - ***Interactive***: If you've used Powershell, Bash, Zsh, sh, or any other standard CLI environment then you will be used to interactive shells. These allow you to interact with programs after executing them. For example, take the ***SSH login prompt***:
+> <p align="center"><img src="https://github.com/4bo4yman/Privilege-Escalation/assets/156849852/4f9645b1-4e12-4076-b119-42ace77b59f2"></p>
+> Here you can see that it's asking interactively that the user type either yes or no in order to continue the connection. This is an interactive program, which requires an interactive shell in order to run.
 
-
+> [!IMPORTANT]
+> * ***Non-Interactive*** shells don't give you that luxury. In a non-interactive shell you are limited to using programs which do not require user interaction in order to run properly. Unfortunately, the majority of simple reverse and bind shells are non-interactive, which can make further exploitation trickier. Let's see what happens when we try to run SSH in a non-interactive shell:
+> <p align="center"><img src="https://github.com/4bo4yman/Privilege-Escalation/assets/156849852/3d74caea-2100-4efb-8cfd-3853d691050f"></p>
+> that the whoami command (which is non-interactive) executes perfectly, but the ssh command (which is interactive) gives us no output at all. 
 
